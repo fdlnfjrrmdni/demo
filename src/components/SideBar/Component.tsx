@@ -1,6 +1,12 @@
 import React, { ReactNode, memo } from "react";
 
 import "./styles.scss";
+import Application from "../../assets/svgs/sidebar/application.svg";
+import Company from "../../assets/svgs/sidebar/company.svg";
+import Home from "../../assets/svgs/sidebar/home.svg";
+import Messages from "../../assets/svgs/sidebar/messages.svg";
+import Opportunity from "../../assets/svgs/sidebar/opportunity.svg";
+import TeamMember from "../../assets/svgs/sidebar/team-member.svg";
 
 interface Props {
   children: ReactNode;
@@ -10,32 +16,32 @@ interface Props {
 const pages = [
   {
     name: "Home",
-    icon: "",
+    icon: Home,
     isOpen: false,
   },
   {
     name: "My Company",
-    icon: "",
+    icon: Company,
     isOpen: false,
   },
   {
-    name: "Opportuninty",
-    icon: "",
+    name: "Opportunity",
+    icon: Opportunity,
     isOpen: true,
   },
   {
     name: "Application",
-    icon: "",
+    icon: Application,
     isOpen: false,
   },
   {
     name: "Team Member",
-    icon: "",
+    icon: TeamMember,
     isOpen: false,
   },
   {
     name: "Messages",
-    icon: "",
+    icon: Messages,
     isOpen: false,
   },
   {
@@ -56,7 +62,9 @@ const Component = ({ children }: Props) => {
           {pages.map((item) => (
             <div className={`wrap-btn ${item.isOpen && "active"}`}>
               <a className="btn">
-                <img className="icon" src={item.icon} />
+                <div className="wrap-icon">
+                  <img src={item.icon} />
+                </div>
                 <span className="name">{item.name}</span>
               </a>
               {item.isOpen && <div className="stick" />}

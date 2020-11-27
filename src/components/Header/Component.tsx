@@ -2,10 +2,10 @@ import React, { ReactNode, memo } from "react";
 
 import "./styles.scss";
 import { SearchBar } from "..";
-import BurgerMenu from "../../assets/svgs/burger-menu.svg";
-import NotificationBell from "../../assets/svgs/notification-bell.svg";
-import Profile from "../../assets/svgs/profile.svg";
-import Setting from "../../assets/svgs/setting.svg";
+import BurgerMenu from "../../assets/svgs/header/burger-menu.svg";
+import NotificationBell from "../../assets/svgs/header/notification-bell.svg";
+import Profile from "../../assets/svgs/header/profile.svg";
+import Setting from "../../assets/svgs/header/setting.svg";
 
 interface Props {
   children: ReactNode;

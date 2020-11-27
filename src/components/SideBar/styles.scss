@@ -39,9 +39,15 @@ html, body, #root {
       background-color: $blue;
       box-shadow: 0 3px 6px $black20;
     }
+
     .name {
       color: $white;
     }
+
+    .wrap-icon {
+      background-color: $white80;
+    }
+
     .stick {
       background-color: $blue;
       width: 4px;
@@ -61,12 +67,19 @@ html, body, #root {
   }
 
   .name {
-    color: $gray;
+    color: $gray80;
     font-size: 14px;
     font-weight: bold;
+    margin-right: 20px;
   }
 
-  .icon {
-
+  .wrap-icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
   }
 }
