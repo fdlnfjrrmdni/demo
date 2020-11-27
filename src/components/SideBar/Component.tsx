@@ -1,6 +1,7 @@
 import React, { ReactNode, memo } from "react";
 
 import "./styles.scss";
+import Logo from "../../assets/svgs/logo.svg";
 import Application from "../../assets/svgs/sidebar/application.svg";
 import Company from "../../assets/svgs/sidebar/company.svg";
 import Home from "../../assets/svgs/sidebar/home.svg";
@@ -56,7 +57,7 @@ const Component = ({ children }: Props) => {
     <div className="sidebar">
       <div className="column">
         <div className="logo">
-          <h1 className="text">nifty</h1>
+          <img src={Logo} />
         </div>
         <div className="wrap-nav">
           {pages.map((item) => (

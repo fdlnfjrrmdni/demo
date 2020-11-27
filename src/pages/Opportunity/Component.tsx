@@ -12,7 +12,7 @@ const Component = () => {
       <Header title="Opportunity">
         <div className="page-opportunity">
           <SearchBar />
-          <div className="button" />
+          <button className="button">Show</button>
         </div>
       </Header>
     </SideBar>

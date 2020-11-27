@@ -3,4 +3,14 @@
 .page-opportunity {
   height: 100%;
   margin-left: 47px;
+  .button {
+    background-color: $transparent;
+    // border: none;
+    border: 1px solid $gray;
+    line-height: normal;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 }
