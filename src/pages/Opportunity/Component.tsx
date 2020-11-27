@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.scss";
-import { SideBar, Header } from "../../components";
+import { SideBar, Header, SearchBar } from "../../components";
 import { documentTitle } from "../../utils";
 
 const Component = () => {
@@ -11,10 +11,7 @@ const Component = () => {
     <SideBar>
       <Header title="Opportunity">
         <div className="page-opportunity">
-          <div className="field">
-            <img />
-            <input value="" placeholder="Search" />
-          </div>
+          <SearchBar />
           <div className="button" />
         </div>
       </Header>

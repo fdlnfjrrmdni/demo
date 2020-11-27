@@ -9,10 +9,13 @@
   box-shadow: -6px 0 20px $black20;
   
   .row {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 47px;
+    margin-right: 40px;
     margin-top: 29px;
-    // border: 1px solid $gray;
   }
 
   .date {
@@ -21,7 +24,30 @@
   }
 
   .wrap-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .profile-menu {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+      .icon {
+        padding-right: 14px;
+      }
+      .logout {
+        font-size: 14px;
+        color: $blue;
+      }
+    }
 
+    .menu {
+      height: 26px;
+      width: 26px;
+    }
+  }
+
+  .search {
+    margin-right: 47px;
   }
 
   .title {
