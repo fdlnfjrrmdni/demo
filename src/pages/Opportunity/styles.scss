@@ -1,0 +1,24 @@
+@import "../../sass/color";
+
+.page-opportunity {
+  height: 100%;
+  margin-left: 47px;
+  .field {
+    input {
+      height: 29px;
+      width: 624px;
+      border: none;
+      border-radius: 29px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 12px;
+      line-height: normal;
+      position: relative;
+      background-color: $gray20;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+}

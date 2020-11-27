@@ -2,14 +2,15 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // screens
-import Home from "../pages/Home";
+// import Home from "../pages/Home";
+import Opportunity from "../pages/Opportunity";
 import Detail from "../pages/Detail";
 
 const App = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" exact>
-        <Home />
+        <Opportunity />
       </Route>
       <Route path="/detail">
         <Detail />
