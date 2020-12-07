@@ -1,11 +1,11 @@
 import {
-  GET_SEASON_ERROR,
-  GET_SEASON_PENDING,
-  GET_SEASON_SUCCESS,
+  GET_EDUCATION_ERROR,
+  GET_EDUCATION_PENDING,
+  GET_EDUCATION_SUCCESS,
 } from "../actions";
-import { Action, DetailState } from "../types";
+import { Action, EducationState } from "../types";
 
-const initialState: DetailState = {
+const initialState: EducationState = {
   data: [],
   isLoading: false,
 };
@@ -13,11 +13,11 @@ const initialState: DetailState = {
 export default (state = initialState, { type, payload }: Action) => {
   switch (type) {
     // get season
-    case GET_SEASON_PENDING:
+    case GET_EDUCATION_PENDING:
       return { ...state, isLoading: true };
-    case GET_SEASON_SUCCESS:
+    case GET_EDUCATION_SUCCESS:
       return { ...state, isLoading: false, data: payload.data };
-    case GET_SEASON_ERROR:
+    case GET_EDUCATION_ERROR:
       return { ...state, isLoading: false };
 
     default:

@@ -19,7 +19,12 @@ export interface Action {
 // combine reducers
 export interface Reducers {
   home: HomeState;
-  detail: DetailState;
+  user: UserState;
+  opportunity: OpportunityState;
+  major: MajorState;
+  education: EducationState;
+  contractType: ContractTypeState;
+  requirementCategory: RequirementCategoryState;
 }
 
 // reducers
@@ -27,7 +32,50 @@ export interface HomeState {
   count: number;
 }
 
-export interface DetailState {
-  data: [];
+export interface UserState {
+  data: {
+    id: number;
+    name: string;
+  }[];
+  isLoading: boolean;
+}
+
+export interface OpportunityState {
+  data: {
+    id: number;
+    name: string;
+  }[];
+  isLoading: boolean;
+}
+
+export interface EducationState {
+  data: {
+    id: number;
+    name: string;
+  }[];
+  isLoading: boolean;
+}
+
+export interface MajorState {
+  data: {
+    id: number;
+    name: string;
+  }[];
+  isLoading: boolean;
+}
+
+export interface ContractTypeState {
+  data: {
+    id: number;
+    name: string;
+  }[];
+  isLoading: boolean;
+}
+
+export interface RequirementCategoryState {
+  data: {
+    id: number;
+    name: string;
+  }[];
   isLoading: boolean;
 }

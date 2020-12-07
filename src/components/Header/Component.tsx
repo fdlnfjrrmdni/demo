@@ -15,7 +15,7 @@ interface Props {
 const Component = ({ children, title }: Props) => {
   return (
     <div className="header">
-      <div className="row">
+      <div className="wrap-header">
         <div className="date">
           <span>Friday 13 Nov 2020</span>
         </div>

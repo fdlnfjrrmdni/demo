@@ -28,7 +28,7 @@ const pages = [
   {
     name: "Opportunity",
     icon: Opportunity,
-    isOpen: true,
+    isOpen: false,
   },
   {
     name: "Application",
@@ -49,6 +49,11 @@ const pages = [
     name: "Report & Analitics",
     icon: "",
     isOpen: false,
+  },
+  {
+    name: "Master Data",
+    icon: "",
+    isOpen: true,
   },
 ];
 

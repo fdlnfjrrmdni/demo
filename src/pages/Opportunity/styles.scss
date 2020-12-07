@@ -3,14 +3,30 @@
 .page-opportunity {
   height: 100%;
   margin-left: 47px;
-  .button {
-    background-color: $transparent;
-    // border: none;
-    border: 1px solid $gray;
-    line-height: normal;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  .wrap-search {
+    display: flex;
+    flex-direction: row;
+    .button {
+      margin-left: 75px;
+      width: 128px;
+      height: 34px;
+      border-radius: 22px;
+      background-color: $blue;
+      border: none;
+      box-shadow: 0 15px 15px $black20;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      line-height: normal;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: $white;
+      }
+    }
   }
 }

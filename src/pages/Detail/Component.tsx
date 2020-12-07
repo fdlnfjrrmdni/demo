@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./styles.scss";
 import { documentTitle } from "../../utils";
-import { getSeasons, sampleAction } from "../../redux/actions";
+import { sampleAction } from "../../redux/actions";
 import { Reducers } from "../../redux/types";
 
 const Component = () => {
@@ -12,10 +12,6 @@ const Component = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const homeState = useSelector((state: Reducers) => state.home);
-
-  useEffect(() => {
-    dispatch(getSeasons());
-  }, [dispatch]);
 
   const _count = useCallback(() => {
     dispatch(sampleAction());
